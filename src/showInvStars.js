@@ -6,4 +6,9 @@ const showStars = (nbStars) => {
     }
 }
 
+if (process.argv.length != 3) {
+    console.log("avertissment: showInvStars.js ne s'exécute pas")
+    process.exit(1)
+}
+
 showStars(nbstars)
