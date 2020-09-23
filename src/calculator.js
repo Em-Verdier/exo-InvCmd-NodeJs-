@@ -33,4 +33,8 @@ const calc = (operator, a, b) => {
     }
 }
 
+if (process.argv.length != 5) {
+    console.log("avertissment: calculator.js ne s'execute pas")
+    process.exit(1)
+}
 console.log(calc(operator, a, b))

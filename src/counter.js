@@ -8,4 +8,9 @@ const count = (min, max, step) => {
     }
 }
 
+if (process.argv.length != 5) {
+    console.log("avertissment: counter.js ne s'execute pas")
+    process.exit(1)
+}
+
 count(min, max, step)
